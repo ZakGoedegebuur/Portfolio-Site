@@ -1,0 +1,45 @@
+header {
+  border-bottom: 1px solid var(--main-border-color);
+  background-color: var(--mid-background-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  cursor: default;
+  padding: 1.4rem 1.4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+header h1 {
+  margin: 0rem;
+}
+
+.icon {
+  font-size: 2rem;
+  vertical-align: bottom;
+  transition: font-size 0.3s ease-in-out, color 0.15s ease-in-out;
+  color: var(--main-text-color);
+}
+
+.icon:hover {
+  color: var(--mid-text-color);
+}
+
+.icon:active {
+  color: var(--dark-text-color);
+}
+
+.mar-right-auto {
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}

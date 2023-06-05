@@ -1,0 +1,65 @@
+.buttonContainer {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+  flex-shrink: 1;
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.gradientButton {
+  background-color: rgba(255,255,255,.4);
+  color: black;
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  font-weight: 400;
+  padding: 0.6rem 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  box-shadow: 0rem 0rem 0.6rem rgba(0,0,0,0.1);
+}
+
+.gradientButtonBackdrop {
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 0%;
+  right: 0.4rem;
+  bottom: 0.4rem;
+  left: 0%;
+  transform: translate(0.425rem, 0.425rem);
+  z-index: -1;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 100%);
+}
+
+.buttonContainer:hover {
+  transform: translate(-0.125rem, -0.125rem);
+}
+
+.grad-red-to-yellow {
+  background: rgb(212, 45, 45);
+  background: linear-gradient(90deg, rgb(212, 45, 45) 0%, rgb(255, 208, 122) 100%);
+}
+
+.grad-blue-to-aqua {
+  background: rgb(97, 255, 168);
+  background: linear-gradient(270deg, rgb(97, 255, 168) 0%, rgb(139, 178, 255) 100%);
+}
+
+.grad-blue-to-light-blue {
+  background: rgb(108,172,255);
+  background: linear-gradient(90deg, rgba(108,172,255,1) 0%, rgba(189,235,255,1) 100%);
+}
+
+.grad-green-to-yellow {
+  background: rgb(109,225,149);
+  background: linear-gradient(90deg, rgba(109,225,149,1) 0%, rgb(219, 241, 150) 100%);
+}
+
+.grad-purple-to-orange {
+  background: rgb(251,195,144);
+  background: linear-gradient(270deg, rgba(251,195,144,1) 0%, rgba(210,121,238,1) 100%);
+}
